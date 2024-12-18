@@ -25,7 +25,7 @@ class Apiservices extends GetxController {
     print('Fetching login page...');
     final loginPageResponse = await dio.get(loginPageUrl);
     final loginPageHtml = loginPageResponse.data;
-    //final cookies = 
+    //final cookies =  loginPageResponse.
     log(jsonEncode(loginPageHtml));
 
     // Step 2: Extract hidden values (__VIEWSTATE, __EVENTVALIDATION, etc.)
@@ -37,6 +37,7 @@ class Apiservices extends GetxController {
     print('VIEWSTATE: $viewState');
     print('VIEWSTATEGENERATOR: $viewStateGenerator');
     print('EVENTVALIDATION: $eventValidation');
+
 
 
 

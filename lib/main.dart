@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
     Get.lazyPut<Apiservices>(() => Apiservices());
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: "/splash",
+      initialRoute: "/view",
       getPages: MyAppRoutes.routes,
     );
   }
